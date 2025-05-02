@@ -1,0 +1,49 @@
+body {
+    background-color: #002244 ;
+    color: #FFA500 !important;
+    font-family: 'Georgia', serif !important;
+}
+
+h1, h2, h3, h4 {
+    color: #FFA500 !important;
+    font-family: 'Georgia', serif !important;
+}
+
+.stWrite {
+    color: #FFA500 !important;
+    font-family: 'Georgia', serif !important;
+}
+.stButton > button {
+    background-color: #FFA500;
+    color: #0e4cd3;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    margin: 10px 0;
+}
+
+.stButton > button:hover {
+    background-color: #FF8C00;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.stDownloadButton {
+    margin-top: 10px;
+    color: white !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .stButton > button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,91 @@
+/* Fondo general */
+body {
+    background-color: #0a1a2f;
+    color: orange !important ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    transition: background-color 0.5s ease !important;
+}
+
+/* Encabezados */
+h1, h2, h3, h4 {
+    color: #ff9900 !important;
+    animation: fadeIn 1s ease-in m !important ;
+}
+
+/* Estilo de los mensajes del chat */
+.stChatMessage {
+    background-color: #112b45 !important;
+    color: #ffae42 !important; 
+    padding: 12px !important;
+    border-radius: 12px !important;
+    margin: 10px 0 !important;
+    transition: background-color 0.3s ease !important;
+    animation: slideUp 0.5s ease-in-out !important;
+}
+
+/* Efecto de resalte en hover */
+.stChatMessage:hover {
+    background-color: #173a5c !important;
+}
+
+/* Botones */
+.stButton>button {
+    background-color: #ff9900 !important;
+    color: #0a1a2f !important;
+    border-radius: 8px !important;
+    padding: 8px 16px !important;
+    font-weight: bold !important;
+    transition: all 0.3s ease !important; 
+}
+
+.stButton>button:hover {
+    background-color: #ffaa33 !important;
+    transform: scale(1.05) !important;
+}
+
+/* Inputs de texto */
+.stTextInput>div>input {
+    border: 1px solid #ff9900 !important;
+    background-color: #0a1a2f !important;
+    color: orange !important;
+    border-radius: 5px !important;
+    padding: 8px !important;
+    transition: border 0.3s ease !important;
+}
+
+.stTextInput>div>input:focus {
+    border: 2px solid #ffaa33 !important;
+    outline: none !important; 
+}
+
+/* Estilo del uploader */
+[data-testid="stFileUploader"] {
+    background-color: #1a2b4c !important;
+    border: 2px dashed #ff9900 !important;
+    border-radius: 10px !important;
+    padding: 1rem !important;
+    transition: border 0.4s ease !important;
+    animation: fadeIn 1s ease-out !important;
+}
+
+[data-testid="stFileUploader"] label {
+    color: orange !important;
+    font-weight: bold !important;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
